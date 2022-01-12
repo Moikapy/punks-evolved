@@ -240,7 +240,7 @@ const Home = (props: HomeProps) => {
           height: 100%;
           max-height: 1200px;
           min-height: 1000px;
-          background: url('https://cdn.discordapp.com/attachments/905542266549047336/930616457958674492/banner_for_minting_website_longer.jpg')
+          background: url('https://cdn.discordapp.com/attachments/905542266549047336/930642633343262740/banner_for_minting_website_3_png.png')
             no-repeat top center;
           background-size: cover;
         }
