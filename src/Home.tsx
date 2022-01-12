@@ -1,3 +1,4 @@
+//@ts-nocheck
 import {useEffect, useMemo, useState, useCallback} from 'react';
 import * as anchor from '@project-serum/anchor';
 
