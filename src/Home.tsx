@@ -382,18 +382,16 @@ const Home = (props: HomeProps) => {
             align-itens-center px-3  px-md-5 py-5 roadmap mx-auto`}>
         <h1 className={`text-center punk-font mb-5`}>About Punks Evolved</h1>
         <p>
-          There is no limit to how many punks you can mint, although we suggest
-          and would appreciate for the sake of fair distribution limiting
-          yourself to whatever amount you think is fair, at your discretion
+          Punks Evolved is the "genesis" project to all things 3D in our family of projects - it's the one that started it all
         </p>
         <p>
-          There are over 115 variations of different rarities spread amongst 9
-          categories of attributes and some truly wild combinations to claim for
-          your own!
+          Punks Evolved is a 1,000 supply project so being part of our roots for all 3D project has limited space and entitles you to airdrops and value added incentives for all developments we ever make
         </p>
         <p>
-          When the system goes live it will generate 1,000 NFTs and erase any
-          duplicates to ensure uniqueness
+          There are over 115 variations of different rarities spread amongst 9 categories of attributes and some truly wild combinations to claim for your own!
+        </p>
+        <p>
+          When the system goes live it will generate 1,000 NFTs and erase any duplicates to ensure uniqueness
         </p>
       </div>
       {/* Punks Evolved */}
