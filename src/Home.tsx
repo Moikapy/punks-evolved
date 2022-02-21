@@ -202,7 +202,11 @@ const Home = (props: HomeProps) => {
         }
         .roadmap {
           width: 100%;
-          max-width: 50rem;
+          background: url(https://cdn.discordapp.com/attachments/905542266549047336/945437527131717662/Roadmap_Banner_optimized.png)
+            no-repeat top center;
+          background-size:  cover;
+          min-height: 45rem;
+          height: 100%;
         }
         .stay-involved {
           height: 100%;
@@ -326,7 +330,7 @@ const Home = (props: HomeProps) => {
       {/* HEADER */}
       <div
         className={`header-section d-flex flex-column justify-content-center
-            align-itens-center h-100 w-100`}>
+            align-items-center h-100 w-100`}>
         <div
           className={`js-font d-flex flex-column align-items-center justify-content-center col col-md-6 px-3`}>
           <img
@@ -336,41 +340,7 @@ const Home = (props: HomeProps) => {
           />
 
           <div className='container d-flex flex-column justify-content-center align-items-center p-3 border border-dark w-100 my-4'>
-            {!wallet.connected ? (
-              <ConnectButton>Connect Wallet</ConnectButton>
-            ) : (
-              <>
-                <Header candyMachine={candyMachine} />
-                <MintContainer>
-                  <MintButton
-                    candyMachine={candyMachine}
-                    isMinting={isUserMinting}
-                    onMint={onMint}
-                  />
-                </MintContainer>
-              </>
-            )}
-            <p>{1000 - candyMachine?.state.itemsRemaining}/1000 Minted</p>
-            <div className='progress position-relative mb-3'>
-              <span className='nft-percent position-absolute top-50 start-50 translate-middle'>
-                {(
-                  ((1000 - candyMachine?.state.itemsRemaining) / 1000) *
-                  100
-                ).toFixed(2)}
-                %
-              </span>
-              <div
-                style={{
-                  width: `${
-                    ((1000 - candyMachine?.state.itemsRemaining) / 1000) * 100
-                  }%`,
-                }}
-                className='progress-bar bg-blood'
-                role='progressbar'
-                aria-valuenow={1000 - candyMachine?.state.itemsRemaining}
-                aria-valuemin={0}
-                aria-valuemax={1000}></div>
-            </div>
+            MINT CLOSED!
           </div>
         </div>
       </div>
@@ -379,25 +349,31 @@ const Home = (props: HomeProps) => {
       {/* PROFILE INFO */}
       <div
         className={`container d-flex flex-column justify-content-center
-            align-itens-center px-3  px-md-5 py-5 roadmap mx-auto`}>
+            align-items-center px-3  px-md-5 py-5 mx-auto`}>
         <h1 className={`text-center punk-font mb-5`}>About Punks Evolved</h1>
         <p>
-          Punks Evolved is the "genesis" project to all things 3D in our family of projects - it's the one that started it all
+          Punks Evolved is the "genesis" project to all things 3D in our family
+          of projects - it's the one that started it all
         </p>
         <p>
-          Punks Evolved is a 1,000 supply project so being part of our roots for all 3D project has limited space and entitles you to airdrops and value added incentives for all developments we ever make
+          Punks Evolved is a 911 supply project so being part of our roots for
+          all 3D project has limited space and entitles you to airdrops and
+          value added incentives for all developments we ever make
         </p>
         <p>
-          There are over 115 variations of different rarities spread amongst 9 categories of attributes and some truly wild combinations to claim for your own!
+          There are over 115 variations of different rarities spread amongst 9
+          categories of attributes and some truly wild combinations to claim for
+          your own!
         </p>
         <p>
-          When the system goes live it will generate 1,000 NFTs and erase any duplicates to ensure uniqueness
+          When the system goes live it will generate 911 NFTs and erase any
+          duplicates to ensure uniqueness
         </p>
       </div>
       {/* Punks Evolved */}
       <div
         className={`container-fluid Punks-Evolved-container d-flex flex-column justify-content-center
-            align-itens-center px-3 px-md-5 py-5`}>
+            align-items-center px-3 px-md-5 py-5`}>
         <div className={`d-flex flex-column  col-md-6 `}>
           <h1 className={`punk-font mb-5`}>Jack In The Blocks?</h1>
           <p>
@@ -425,12 +401,16 @@ const Home = (props: HomeProps) => {
           </div>
         </div>
       </div>
+      {/* ROADMAP */}
+      <div
+        className={` roadmap  d-flex flex-column justify-content-center
+            align-items-center`}></div>
       {/* FAQ */}
       <div
         className={`container d-flex flex-column justify-content-center
-            align-itens-center px-3  px-md-5 pt-5 text-capitalize`}>
+            align-items-center px-3  px-md-5 pt-5 text-capitalize`}>
         <h2 className='text-center my-3'>F.A.Q.</h2>
-        <div className={`d-flex flex-column roadmap mx-auto mt-5`}>
+        <div className={`d-flex flex-column mx-auto mt-5`}>
           <ul className='fs-5'>
             <li>
               Who made Punks Evolved?
@@ -493,7 +473,7 @@ const Home = (props: HomeProps) => {
       {/* SOCIALS*/}
       <div
         className={`container-fluid socials d-flex flex-column justify-content-center
-            align-itens-center px-3  px-md-5 py-5`}>
+            align-items-center px-3  px-md-5 py-5`}>
         <div
           className={`d-flex flex-column flex-md-row justify-content-around align-items-center`}>
           {/* <a
