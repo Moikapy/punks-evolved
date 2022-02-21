@@ -181,7 +181,7 @@ const Home = (props: HomeProps) => {
           -webkit-font-smoothing: antialiased;
           -moz-osx-font-smoothing: grayscale;
           background-color: RGB(6, 21, 36) !important;
-          max-width: 1920px;
+          // max-width: 1920px;
           margin: 0 auto;
         }
 
