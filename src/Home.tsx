@@ -201,12 +201,12 @@ const Home = (props: HomeProps) => {
           background-size: cover;
         }
         .roadmap {
-          width: 100%;
+          // width: 100%;
           background: url(https://cdn.discordapp.com/attachments/905542266549047336/945437527131717662/Roadmap_Banner_optimized.png)
             no-repeat top center;
-          background-size:  cover;
-          min-height: 45rem;
-          height: 100%;
+          background-size: cover;
+          max-height: 57rem;
+          // height: 100%;
         }
         .stay-involved {
           height: 100%;
@@ -243,7 +243,7 @@ const Home = (props: HomeProps) => {
         .header-section {
           height: 100%;
           max-height: 1200px;
-          min-height: 1000px;
+          min-height: 800px;
           background: url('https://cdn.discordapp.com/attachments/905542266549047336/930642633343262740/banner_for_minting_website_3_png.png')
             no-repeat top center;
           background-size: cover;
@@ -294,21 +294,21 @@ const Home = (props: HomeProps) => {
           background-color: #ad0000;
         }
 
-        @media screen and (max-width: 1000px) {
-          .mint-section-box,
-          .header-section,
-          .logo-xl {
-            height: 100%;
-            min-height: 800px;
-            max-height: 1200px;
-          }
-        }
-        @media screen and (max-width: 800px) {
+        @media screen and (max-width: 1200px) {
           .mint-section-box,
           .header-section,
           .logo-xl {
             height: 100%;
             min-height: 600px;
+            max-height: 1200px;
+          }
+        }
+        @media screen and (max-width: 576px) {
+          .mint-section-box,
+          .header-section,
+          .logo-xl {
+            height: 100%;
+            min-height: 400px;
             max-height: 1200px;
           }
           .header-section {
@@ -318,6 +318,13 @@ const Home = (props: HomeProps) => {
           }
           p {
             font-size: 1.15rem;
+          }
+          .roadmap {
+            // height: 100%;
+            // min-height: 37rem;
+            background: url()
+            no-repeat top center;
+            background-size: cover;
           }
         }
         .w-90 {
@@ -386,12 +393,12 @@ const Home = (props: HomeProps) => {
             <a
               className={`jitb-style-btn d-flex flex-row align-items-center btn btn-light text-uppercase my-4 m-2 p-4`}
               href={'https://jackintheblocks.io/'}>
-              Mint a Jack
+              Mint
             </a>
             <a
               className={`jitb-style-btn d-flex flex-row align-items-center btn btn-light text-uppercase my-4 p-4`}
               href={'http://discord.gg/c73a3danSJ'}>
-              Join Discord
+              Discord
             </a>
             <a
               className={`jitb-style-btn d-flex flex-row align-items-center btn btn-light text-uppercase my-4 m-2 p-4`}
@@ -404,7 +411,15 @@ const Home = (props: HomeProps) => {
       {/* ROADMAP */}
       <div
         className={` roadmap  d-flex flex-column justify-content-center
-            align-items-center`}></div>
+            align-items-center`}>
+              {/* <img
+            className={`text-center roadmap mx-auto mb-5 d-md-none`}
+            src={
+              'https://cdn.discordapp.com/attachments/905542266549047336/945441215497793646/Roadmap_squared_optimized.png'
+            }
+            alt='roadmap'
+          /> */}
+            </div>
       {/* FAQ */}
       <div
         className={`container d-flex flex-column justify-content-center
@@ -476,11 +491,11 @@ const Home = (props: HomeProps) => {
             align-items-center px-3  px-md-5 py-5`}>
         <div
           className={`d-flex flex-column flex-md-row justify-content-around align-items-center`}>
-          {/* <a
+          <a
               className={`jitb-style-btn d-flex flex-row align-items-center btn btn-light text-uppercase my-4 mx-2 p-4`}
               href={'https://opensea.io/collection/jackintheblocks'}>
-              Opensea
-            </a> */}
+              Magic Eden
+            </a>
           <a
             className={`jitb-style-btn d-flex flex-row align-items-center btn btn-light text-uppercase my-4 mx-2 p-4`}
             href={'https://discord.gg/s99MhhmttM'}>
