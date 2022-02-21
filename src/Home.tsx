@@ -299,7 +299,7 @@ const Home = (props: HomeProps) => {
           .header-section,
           .logo-xl {
             height: 100%;
-            min-height: 600px;
+            min-height: 1000px;
             max-height: 1200px;
           }
         }
@@ -308,7 +308,7 @@ const Home = (props: HomeProps) => {
           .header-section,
           .logo-xl {
             height: 100%;
-            min-height: 400px;
+            min-height: 800px;
             max-height: 1200px;
           }
           .header-section {
