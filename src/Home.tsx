@@ -397,7 +397,7 @@ const Home = (props: HomeProps) => {
             </a>
             <a
               className={`jitb-style-btn d-flex flex-row align-items-center btn btn-light text-uppercase my-4 p-4`}
-              href={'http://discord.gg/c73a3danSJ'}>
+              href={'http://discord.gg/s99MhhmttM'}>
               Discord
             </a>
             <a
