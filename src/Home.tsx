@@ -382,14 +382,14 @@ const Home = (props: HomeProps) => {
         className={` roadmap mx-auto d-flex flex-row justify-content-center
             align-items-center`}>
         <img
-          className={`text-center w-100 h-100 d-flex d-md-none`}
+          className={`text-center w-100 h-100 d-flex d-lg-none`}
           src={
             'https://cdn.discordapp.com/attachments/905542266549047336/946346356396675102/Roadmap_squared_optimized_for_mobile.png'
           }
           alt='roadmap'
         />
         <img
-          className={`text-center w-100 h-100 d-none d-md-flex`}
+          className={`text-center w-100 h-100 d-none d-lg-flex`}
           src={
             'https://cdn.discordapp.com/attachments/905542266549047336/946346425292316682/Roadmap_Banner_optimized_and_clipped_for_web.png'
           }
