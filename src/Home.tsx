@@ -380,37 +380,7 @@ const Home = (props: HomeProps) => {
           your own!
         </p>
       </div>
-      {/* Punks Evolved */}
-      <div
-        className={`container-fluid Punks-Evolved-container d-flex flex-column justify-content-center
-            align-items-center px-3 px-md-5 py-5`}>
-        <div className={`d-flex flex-column  col-md-6 `}>
-          <h1 className={`punk-font mb-5`}>Jack In The Blocks?</h1>
-          <p>
-            Community is everything in NFTs and we’d love to have you as part of
-            ours! Join our Discords to stay up to date with both projects!
-          </p>
 
-          <div
-            className={`d-flex flex-column flex-md-row justify-content-start align-items-center`}>
-            <a
-              className={`jitb-style-btn d-flex flex-row align-items-center btn btn-light text-uppercase my-4 m-2 p-4`}
-              href={'https://jackintheblocks.io/'}>
-              Mint
-            </a>
-            <a
-              className={`jitb-style-btn d-flex flex-row align-items-center btn btn-light text-uppercase my-4 p-4`}
-              href={'http://discord.gg/s99MhhmttM'}>
-              Discord
-            </a>
-            <a
-              className={`jitb-style-btn d-flex flex-row align-items-center btn btn-light text-uppercase my-4 m-2 p-4`}
-              href={'https://twitter.com/JackInTheBlocks'}>
-              Twitter
-            </a>
-          </div>
-        </div>
-      </div>
       {/* ROADMAP */}
       <div
         className={` roadmap mx-auto d-flex flex-row justify-content-center
@@ -487,7 +457,37 @@ const Home = (props: HomeProps) => {
           </ul>
         </div>
       </div>
+      {/* Punks Evolved */}
+      <div
+        className={`container-fluid Punks-Evolved-container d-flex flex-column justify-content-center
+            align-items-center px-3 px-md-5 py-5`}>
+        <div className={`d-flex flex-column  col-md-6 `}>
+          <h1 className={`punk-font mb-5`}>Jack In The Blocks?</h1>
+          <p>
+            Community is everything in NFTs and we’d love to have you as part of
+            ours! Join our Discords to stay up to date with both projects!
+          </p>
 
+          <div
+            className={`d-flex flex-column flex-md-row justify-content-start align-items-center`}>
+            <a
+              className={`jitb-style-btn d-flex flex-row align-items-center btn btn-light text-uppercase my-4 m-2 p-4`}
+              href={'https://jackintheblocks.io/'}>
+              Mint
+            </a>
+            <a
+              className={`jitb-style-btn d-flex flex-row align-items-center btn btn-light text-uppercase my-4 p-4`}
+              href={'http://discord.gg/s99MhhmttM'}>
+              Discord
+            </a>
+            <a
+              className={`jitb-style-btn d-flex flex-row align-items-center btn btn-light text-uppercase my-4 m-2 p-4`}
+              href={'https://twitter.com/JackInTheBlocks'}>
+              Twitter
+            </a>
+          </div>
+        </div>
+      </div>
       {/* SOCIALS*/}
       <div
         className={`container-fluid socials d-flex flex-column justify-content-center
