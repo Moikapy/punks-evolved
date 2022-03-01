@@ -201,12 +201,7 @@ const Home = (props: HomeProps) => {
           background-size: cover;
         }
         .roadmap {
-          // width: 100%;
-          background: url(https://cdn.discordapp.com/attachments/905542266549047336/945437527131717662/Roadmap_Banner_optimized.png)
-            no-repeat top center;
-          background-size: cover;
-          max-height: 57rem;
-          // height: 100%;
+          max-width: 1400px;
         }
         .stay-involved {
           height: 100%;
@@ -303,6 +298,15 @@ const Home = (props: HomeProps) => {
             max-height: 1200px;
           }
         }
+        @media screen and (max-width: 768px) {
+        
+          .header-section {
+            background: url('https://cdn.discordapp.com/attachments/905542266549047336/930576006455111691/banner_for_minting_website.jpg')
+              no-repeat top right;
+            background-size: cover;
+          }
+         
+        }
         @media screen and (max-width: 576px) {
           .mint-section-box,
           .header-section,
@@ -313,18 +317,14 @@ const Home = (props: HomeProps) => {
           }
           .header-section {
             background: url('https://cdn.discordapp.com/attachments/905542266549047336/930576006455111691/banner_for_minting_website.jpg')
-              no-repeat top center;
+              no-repeat top right;
             background-size: cover;
           }
           p {
             font-size: 1.15rem;
           }
           .roadmap {
-            // height: 100%;
-            // min-height: 37rem;
-            background: url()
-            no-repeat top center;
-            background-size: cover;
+            min-height: 37rem;
           }
         }
         .w-90 {
@@ -360,21 +360,24 @@ const Home = (props: HomeProps) => {
         <h1 className={`text-center punk-font mb-5`}>About Punks Evolved</h1>
         <p>
           Punks Evolved is the "genesis" project to all things 3D in our family
-          of projects - it's the one that started it all
+          of projects - it's the one that started it all and our premium airdrop
+          pass to all things 3D
         </p>
         <p>
-          Punks Evolved is a 911 supply project so being part of our roots for
-          all 3D project has limited space and entitles you to airdrops and
-          value added incentives for all developments we ever make
+          Our first airdropped project was Jack In The Blocks with our next
+          upcoming airdrop being for MetaWares Marketplace, the snapshot of
+          which will be taken 2 weeks after our WL sale
+        </p>
+        <p>
+          Punks Evolved is a 911 supply project so being part of our ecosystem
+          has limited space and entitles you to airdrops and value added
+          incentives for all developments we ever make, as well as royalties to
+          MetaWares Marketplace
         </p>
         <p>
           There are over 115 variations of different rarities spread amongst 9
           categories of attributes and some truly wild combinations to claim for
           your own!
-        </p>
-        <p>
-          When the system goes live it will generate 911 NFTs and erase any
-          duplicates to ensure uniqueness
         </p>
       </div>
       {/* Punks Evolved */}
@@ -410,16 +413,16 @@ const Home = (props: HomeProps) => {
       </div>
       {/* ROADMAP */}
       <div
-        className={` roadmap  d-flex flex-column justify-content-center
+        className={` roadmap mx-auto d-flex flex-row justify-content-center
             align-items-center`}>
-              {/* <img
-            className={`text-center roadmap mx-auto mb-5 d-md-none`}
-            src={
-              'https://cdn.discordapp.com/attachments/905542266549047336/945441215497793646/Roadmap_squared_optimized.png'
-            }
-            alt='roadmap'
-          /> */}
-            </div>
+        <img
+          className={`text-center w-100 h-100`}
+          src={
+            'https://cdn.discordapp.com/attachments/905542266549047336/946346356396675102/Roadmap_squared_optimized_for_mobile.png'
+          }
+          alt='roadmap'
+        />
+      </div>
       {/* FAQ */}
       <div
         className={`container d-flex flex-column justify-content-center
@@ -492,10 +495,10 @@ const Home = (props: HomeProps) => {
         <div
           className={`d-flex flex-column flex-md-row justify-content-around align-items-center`}>
           <a
-              className={`jitb-style-btn d-flex flex-row align-items-center btn btn-light text-uppercase my-4 mx-2 p-4`}
-              href={'https://opensea.io/collection/jackintheblocks'}>
-              Magic Eden
-            </a>
+            className={`jitb-style-btn d-flex flex-row align-items-center btn btn-light text-uppercase my-4 mx-2 p-4`}
+            href={'https://opensea.io/collection/jackintheblocks'}>
+            Magic Eden
+          </a>
           <a
             className={`jitb-style-btn d-flex flex-row align-items-center btn btn-light text-uppercase my-4 mx-2 p-4`}
             href={'https://discord.gg/s99MhhmttM'}>
