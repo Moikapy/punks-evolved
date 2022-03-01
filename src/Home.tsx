@@ -200,9 +200,7 @@ const Home = (props: HomeProps) => {
           background: url('WebBanner1reduced.jpg') no-repeat top center;
           background-size: cover;
         }
-        .roadmap {
-          max-width: 1400px;
-        }
+
         .stay-involved {
           height: 100%;
           height: 43.75rem;
@@ -299,13 +297,11 @@ const Home = (props: HomeProps) => {
           }
         }
         @media screen and (max-width: 768px) {
-        
           .header-section {
             background: url('https://cdn.discordapp.com/attachments/905542266549047336/930576006455111691/banner_for_minting_website.jpg')
               no-repeat top right;
             background-size: cover;
           }
-         
         }
         @media screen and (max-width: 576px) {
           .mint-section-box,
@@ -386,9 +382,16 @@ const Home = (props: HomeProps) => {
         className={` roadmap mx-auto d-flex flex-row justify-content-center
             align-items-center`}>
         <img
-          className={`text-center w-100 h-100`}
+          className={`text-center w-100 h-100 d-flex d-md-none`}
           src={
             'https://cdn.discordapp.com/attachments/905542266549047336/946346356396675102/Roadmap_squared_optimized_for_mobile.png'
+          }
+          alt='roadmap'
+        />
+        <img
+          className={`text-center w-100 h-100 d-none d-md-flex`}
+          src={
+            'https://cdn.discordapp.com/attachments/905542266549047336/946346425292316682/Roadmap_Banner_optimized_and_clipped_for_web.png'
           }
           alt='roadmap'
         />
@@ -491,7 +494,7 @@ const Home = (props: HomeProps) => {
       {/* SOCIALS*/}
       <div
         className={`container-fluid socials d-flex flex-column justify-content-center
-            align-items-center px-3  px-md-5 py-5`}>
+            align-items-center px-3  px-md-5 py-5 flex-wrap`}>
         <div
           className={`d-flex flex-column flex-md-row justify-content-around align-items-center`}>
           <a
