@@ -333,7 +333,7 @@ const Home = (props: HomeProps) => {
       {/* HEADER */}
       <div
         className={`header-section d-flex flex-column justify-content-center
-            align-items-center h-100 w-100`}>
+            align-items-center h-100 w-100 mb-5`}>
         <div
           className={`js-font d-flex flex-column align-items-center justify-content-center col col-md-6 px-3`}>
           <img
@@ -379,7 +379,7 @@ const Home = (props: HomeProps) => {
 
       {/* ROADMAP */}
       <div
-        className={` roadmap mx-auto d-flex flex-row justify-content-center
+        className={`my-5 roadmap mx-auto d-flex flex-row justify-content-center
             align-items-center`}>
         <img
           className={`text-center w-100 h-100 d-flex d-lg-none`}
@@ -399,7 +399,7 @@ const Home = (props: HomeProps) => {
       {/* FAQ */}
       <div
         className={`container d-flex flex-column justify-content-center
-            align-items-center px-3  px-md-5 py-5 text-capitalize`}>
+            align-items-center px-3  px-md-5 py-5 my-5 text-capitalize`}>
         <h2 className='text-center my-3'>F.A.Q.</h2>
         <div className={`d-flex flex-column mx-auto mt-5`}>
           <ul className='fs-5'>
@@ -463,7 +463,7 @@ const Home = (props: HomeProps) => {
       {/* Punks Evolved */}
       <div
         className={`container-fluid Punks-Evolved-container d-flex flex-column justify-content-center
-            align-items-center px-3 px-md-5 py-5`}>
+            align-items-center px-3 px-md-5 py-5 my-4`}>
         <div className={`d-flex flex-column  col-md-6 `}>
           <h1 className={`punk-font mb-5`}>Jack In The Blocks?</h1>
           <p>
