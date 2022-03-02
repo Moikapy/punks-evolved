@@ -399,7 +399,7 @@ const Home = (props: HomeProps) => {
       {/* FAQ */}
       <div
         className={`container d-flex flex-column justify-content-center
-            align-items-center px-3  px-md-5 pt-5 text-capitalize`}>
+            align-items-center px-3  px-md-5 py-5 text-capitalize`}>
         <h2 className='text-center my-3'>F.A.Q.</h2>
         <div className={`d-flex flex-column mx-auto mt-5`}>
           <ul className='fs-5'>
