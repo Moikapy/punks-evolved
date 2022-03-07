@@ -499,7 +499,7 @@ const Home = (props: HomeProps) => {
           className={`d-flex flex-column flex-md-row justify-content-around align-items-center`}>
           <a
             className={`jitb-style-btn d-flex flex-row align-items-center btn btn-light text-uppercase my-4 mx-2 p-4`}
-            href={'https://opensea.io/collection/jackintheblocks'}>
+            href={'https://www.magiceden.io/marketplace/punks_evolved'}>
             Magic Eden
           </a>
           <a
