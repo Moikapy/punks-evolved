@@ -236,7 +236,7 @@ const Home = (props: HomeProps) => {
         .header-section {
           height: 100%;
           max-height: 1200px;
-          min-height: 800px;
+          min-height: 1000px;
           background: url('https://cdn.discordapp.com/attachments/905542266549047336/930642633343262740/banner_for_minting_website_3_png.png')
             no-repeat top center;
           background-size: cover;
@@ -287,6 +287,38 @@ const Home = (props: HomeProps) => {
           background-color: #ad0000;
         }
 
+        @media screen and (min-width: 2000px) {
+          .jitb,
+          .header-section {
+            height: 100%;
+            min-height: 1500px;
+          }
+
+          .about {
+            min-height: 1000px;
+          }
+          .jitb h1,
+          .faq h1,
+          .about h1 {
+            font-size: 5rem;
+          }
+          .faq li,
+          .jitb p, 
+          .mint-btn,
+          .about p {
+            font-size: 3rem;
+          }
+         .faq-list {
+            padding: 1rem 15rem;
+          }
+        }
+        @media screen and (min-width: 3000px) {
+          .header-section {
+            height: 100%;
+            min-height: 2000px;
+          }
+        }
+        ////
         @media screen and (max-width: 1200px) {
           .mint-section-box,
           .header-section,
@@ -342,7 +374,7 @@ const Home = (props: HomeProps) => {
             alt=''
           />
 
-          <div className='container d-flex flex-column justify-content-center align-items-center p-3 border border-dark w-100 my-4'>
+          <div className='mint-btn container d-flex flex-column justify-content-center align-items-center p-3 border border-dark w-100 my-4'>
             MINT CLOSED!
           </div>
         </div>
@@ -351,10 +383,9 @@ const Home = (props: HomeProps) => {
 
       {/* PROFILE INFO */}
       <div
-        className={`container d-flex flex-column justify-content-center
-            align-items-center px-3  px-md-5 py-5 mx-auto`}>
+        className={`about container-fluid d-flex flex-column justify-content-center  px-3  px-md-5 py-5 mx-auto`}>
         <h1 className={`text-center punk-font mb-5`}>About Punks Evolved</h1>
-        <p>
+        <p className='text-left'>
           Punks Evolved is the "genesis" project to all things 3D in our family
           of projects - it's the one that started it all and our premium airdrop
           pass to all things 3D
@@ -380,7 +411,7 @@ const Home = (props: HomeProps) => {
       {/* ROADMAP */}
       <div
         className={`my-5 roadmap mx-auto d-flex flex-row justify-content-center
-            align-items-center`}>
+            align-items-center w-100`}>
         <img
           className={`text-center w-100 h-100 d-flex d-lg-none`}
           src={
@@ -398,11 +429,11 @@ const Home = (props: HomeProps) => {
       </div>
       {/* FAQ */}
       <div
-        className={`container d-flex flex-column justify-content-center
+        className={`faq container-fluid d-flex flex-column justify-content-center
             align-items-center px-3  px-md-5 py-5 my-5 text-capitalize`}>
-        <h2 className='text-center my-3'>F.A.Q.</h2>
-        <div className={`d-flex flex-column mx-auto mt-5`}>
-          <ul className='fs-5'>
+        <h1 className='text-center my-3'>F.A.Q.</h1>
+        <div className={`d-flex flex-column faq-list mt-5`}>
+          <ul className=''>
             <li>
               Who made Punks Evolved?
               <ul>
@@ -462,7 +493,7 @@ const Home = (props: HomeProps) => {
       </div>
       {/* Punks Evolved */}
       <div
-        className={`container-fluid Punks-Evolved-container d-flex flex-column justify-content-center
+        className={`jitb container-fluid Punks-Evolved-container d-flex flex-column justify-content-center
             align-items-center px-3 px-md-5 py-5 my-4`}>
         <div className={`d-flex flex-column  col-md-6 `}>
           <h1 className={`punk-font mb-5`}>Jack In The Blocks?</h1>
