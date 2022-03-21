@@ -297,20 +297,20 @@ const Home = (props: HomeProps) => {
           .about {
             min-height: 1000px;
           }
-          .jitb h1,
-          .faq h1,
-          .about h1 {
-            font-size: 5rem;
-          }
-          .faq li,
-          .jitb p, 
-          .mint-btn,
-          .about p {
-            font-size: 3rem;
-          }
-         .faq-list {
-            padding: 1rem 15rem;
-          }
+        //   .jitb h1,
+        //   .faq h1,
+        //   .about h1 {
+        //     font-size: 5rem;
+        //   }
+        //   .faq li,
+        //   .jitb p, 
+        //   .mint-btn,
+        //   .about p {
+        //     font-size: 3rem;
+        //   }
+        //  .faq-list {
+        //     padding: 1rem 15rem;
+        //   }
         }
         @media screen and (min-width: 3000px) {
           .header-section {
