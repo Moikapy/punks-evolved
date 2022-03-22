@@ -167,8 +167,7 @@ const Home = (props: HomeProps) => {
   ]);
 
   return (
-    <div
-      className={`d-flex flex-column justify-content-center mx-auto text-white`}>
+    <main>
       <style jsx>{`
         iframe {
           display: none;
@@ -181,7 +180,7 @@ const Home = (props: HomeProps) => {
           -webkit-font-smoothing: antialiased;
           -moz-osx-font-smoothing: grayscale;
           background-color: RGB(6, 21, 36) !important;
-          // max-width: 1920px;
+          // max-width: 120rem;
           margin: 0 auto;
         }
 
@@ -201,22 +200,14 @@ const Home = (props: HomeProps) => {
           background-size: cover;
         }
 
-        .stay-involved {
-          height: 100%;
-          height: 43.75rem;
-          background: url('./Web Banner 1 reduced.jpg') no-repeat center center;
-          background-size: cover;
-        }
-        .stay-involved p {
-          font-size: 1.5rem;
-        }
+   
         .socials {
-          min-height: 500px;
+          min-height: 31.25rem;
         }
         .jitb-style-btn {
-          height: 75px;
+          height: 4.6875rem;
           font-size: 1.5rem;
-          width: 300px;
+          width: 18.75rem;
           text-align: center;
           justify-content: center;
         }
@@ -231,28 +222,28 @@ const Home = (props: HomeProps) => {
         }
         .mint-section-icons {
           z-index: 2;
-          padding: 3px 1rem;
+          padding: 0.1875rem 1rem;
         }
         .header-section {
           height: 100%;
-          max-height: 1200px;
-          min-height: 1000px;
+          max-height: 75rem;
+          min-height: 62.5rem;
           background: url('https://cdn.discordapp.com/attachments/905542266549047336/930642633343262740/banner_for_minting_website_3_png.png')
             no-repeat top center;
           background-size: cover;
         }
         .logo {
           height: 100%;
-          min-height: 400px;
-          max-height: 800px;
+          min-height: 25rem;
+          max-height: 50rem;
           left: 0;
         }
         .zin-1 {
           z-index: 1;
         }
         .js-font {
-          min-width: 300px;
-          max-height: 800px;
+          min-width: 18.75rem;
+          max-height: 50rem;
           z-index: 2;
         }
         .js-font img {
@@ -261,22 +252,22 @@ const Home = (props: HomeProps) => {
           text-align: center;
         }
         .preview-gif {
-          max-height: 300px;
-          max-width: 300px;
+          max-height: 18.75rem;
+          max-width: 18.75rem;
         }
         .logo img {
           object-fit: cover;
         }
         svg {
-          width: 32px;
-          height: 32px;
+          width: 2rem;
+          height: 2rem;
           color: #fff;
-          margin: 5px;
+          margin: 0.3125rem;
         }
         .collage-img {
-          min-height: 360px;
-          min-width: 360px;
-          max-width: 1200px;
+          min-height: 22.5rem;
+          min-width: 22.5rem;
+          max-width: 75rem;
         }
         .nft-percent {
           z-index: 5;
@@ -291,31 +282,31 @@ const Home = (props: HomeProps) => {
           .jitb,
           .header-section {
             height: 100%;
-            min-height: 1500px;
+            min-height: 93.75rem;
           }
 
-          .about {
-            min-height: 1000px;
+          .about,.faq {
+            min-height: 62.5rem;
           }
-        //   .jitb h1,
-        //   .faq h1,
-        //   .about h1 {
-        //     font-size: 5rem;
-        //   }
-        //   .faq li,
-        //   .jitb p, 
-        //   .mint-btn,
-        //   .about p {
-        //     font-size: 3rem;
-        //   }
-        //  .faq-list {
-        //     padding: 1rem 15rem;
-        //   }
+          //   .jitb h1,
+          //   .faq h1,
+          //   .about h1 {
+          //     font-size: 80px;
+          //   }
+          //   .faq li,
+          //   .jitb p,
+          //   .mint-btn,
+          //   .about p {
+          //     font-size: 48px;
+          //   }
+          //  .faq-list {
+          //     padding: 16px 240px;
+          //   }
         }
         @media screen and (min-width: 3000px) {
           .header-section {
             height: 100%;
-            min-height: 2000px;
+            min-height: 125rem;
           }
         }
         ////
@@ -324,8 +315,8 @@ const Home = (props: HomeProps) => {
           .header-section,
           .logo-xl {
             height: 100%;
-            min-height: 1000px;
-            max-height: 1200px;
+            min-height: 62.5rem;
+            max-height: 75rem;
           }
         }
         @media screen and (max-width: 768px) {
@@ -340,8 +331,8 @@ const Home = (props: HomeProps) => {
           .header-section,
           .logo-xl {
             height: 100%;
-            min-height: 800px;
-            max-height: 1200px;
+            min-height: 50rem;
+            max-height: 75rem;
           }
           .header-section {
             background: url('https://cdn.discordapp.com/attachments/905542266549047336/930576006455111691/banner_for_minting_website.jpg')
@@ -362,193 +353,196 @@ const Home = (props: HomeProps) => {
           height: 70% !important;
         }
       `}</style>
-      {/* HEADER */}
       <div
-        className={`header-section d-flex flex-column justify-content-center
-            align-items-center h-100 w-100 mb-5`}>
+        className={`d-flex flex-column justify-content-center mx-auto text-white`}>
+        {/* HEADER */}
         <div
-          className={`js-font d-flex flex-column align-items-center justify-content-center col col-md-6 px-3`}>
-          <img
-            src='https://cdn.discordapp.com/attachments/905542266549047336/930576119269302292/Punks_evolved_transparent_Interactive_LightMix.png'
-            className={`h-90 w-90`}
-            alt=''
-          />
+          className={`header-section d-flex flex-column justify-content-center
+            align-items-center h-100 w-100 mb-5`}>
+          <div
+            className={`js-font d-flex flex-column align-items-center justify-content-center col col-md-6 px-3`}>
+            <img
+              src='https://cdn.discordapp.com/attachments/905542266549047336/930576119269302292/Punks_evolved_transparent_Interactive_LightMix.png'
+              className={`h-90 w-90`}
+              alt=''
+            />
 
-          <div className='mint-btn container d-flex flex-column justify-content-center align-items-center p-3 border border-dark w-100 my-4'>
-            MINT CLOSED!
+            <div className='mint-btn container d-flex flex-column justify-content-center align-items-center p-3 border border-dark w-100 my-4'>
+              MINT CLOSED!
+            </div>
           </div>
         </div>
-      </div>
-      {/* MINT SECTION */}
+        {/* MINT SECTION */}
 
-      {/* PROFILE INFO */}
-      <div
-        className={`about container-fluid d-flex flex-column justify-content-center  px-3  px-md-5 py-5 mx-auto`}>
-        <h1 className={`text-center punk-font mb-5`}>About Punks Evolved</h1>
-        <p className='text-left'>
-          Punks Evolved is the "genesis" project to all things 3D in our family
-          of projects - it's the one that started it all and our premium airdrop
-          pass to all things 3D
-        </p>
-        <p>
-          Our first airdropped project was Jack In The Blocks with our next
-          upcoming airdrop being for MetaWares Marketplace, the snapshot of
-          which will be taken 2 weeks after our WL sale
-        </p>
-        <p>
-          Punks Evolved is a 911 supply project so being part of our ecosystem
-          has limited space and entitles you to airdrops and value added
-          incentives for all developments we ever make, as well as royalties to
-          MetaWares Marketplace
-        </p>
-        <p>
-          There are over 115 variations of different rarities spread amongst 9
-          categories of attributes and some truly wild combinations to claim for
-          your own!
-        </p>
-      </div>
-
-      {/* ROADMAP */}
-      <div
-        className={`my-5 roadmap mx-auto d-flex flex-row justify-content-center
-            align-items-center w-100`}>
-        <img
-          className={`text-center w-100 h-100 d-flex d-lg-none`}
-          src={
-            'https://cdn.discordapp.com/attachments/905542266549047336/946346356396675102/Roadmap_squared_optimized_for_mobile.png'
-          }
-          alt='roadmap'
-        />
-        <img
-          className={`text-center w-100 h-100 d-none d-lg-flex`}
-          src={
-            'https://cdn.discordapp.com/attachments/905542266549047336/946346425292316682/Roadmap_Banner_optimized_and_clipped_for_web.png'
-          }
-          alt='roadmap'
-        />
-      </div>
-      {/* FAQ */}
-      <div
-        className={`faq container-fluid d-flex flex-column justify-content-center
-            align-items-center px-3  px-md-5 py-5 my-5 text-capitalize`}>
-        <h1 className='text-center my-3'>F.A.Q.</h1>
-        <div className={`d-flex flex-column faq-list mt-5`}>
-          <ul className=''>
-            <li>
-              Who made Punks Evolved?
-              <ul>
-                <li>
-                  Punks Evolved was crafted by an expert team of 3D Artists and
-                  developers wanting to bring a fresh spin on the generative NFT
-                  landscape. We wanted to maintain the essence of the 2D and
-                  simplistic art styles the crypto space has grown to love while
-                  taking it a step further by creating generative art in a 3
-                  dimensional format
-                </li>
-              </ul>
-            </li>
-            <li>
-              How can I purchase a Punk?
-              <ul>
-                <li>
-                  Connect your wallet to the website and purchase through the
-                  “mint" button
-                </li>
-              </ul>
-            </li>
-            <li>
-              How much does a punk cost?
-              <ul>
-                <li>Each punk costs 0.65 SOL to mint</li>
-              </ul>
-            </li>
-            <li>
-              Where can I view my newly minted Punk?
-              <ul>
-                <li>You can view your punk in your phantom wallet</li>
-              </ul>
-            </li>
-            <li>
-              Is every punk truly unique?
-              <ul>
-                <li>
-                  Yes! We’ve ensured there will be no duplicate punks, and all
-                  will be 100% unique combinations
-                </li>
-              </ul>
-            </li>
-            <li>
-              How many attributes are there
-              <ul>
-                <li>
-                  There are 9 total attributes your punk can take on such as
-                  Background, Head, Mouth, Eyes, Accents, Accesory, Skin, Gender
-                  and Facial hair – all together there are over 115 variations
-                  to draw from
-                </li>
-              </ul>
-            </li>
-          </ul>
-        </div>
-      </div>
-      {/* Punks Evolved */}
-      <div
-        className={`jitb container-fluid Punks-Evolved-container d-flex flex-column justify-content-center
-            align-items-center px-3 px-md-5 py-5 my-4`}>
-        <div className={`d-flex flex-column  col-md-6 `}>
-          <h1 className={`punk-font mb-5`}>Jack In The Blocks?</h1>
+        {/* PROFILE INFO */}
+        <div
+          className={`about container d-flex flex-column justify-content-center align-items-center p-3 w-100 my-4`}>
+          <h1 className={`text-center punk-font mb-5`}>About Punks Evolved</h1>
           <p>
-            Community is everything in NFTs and we’d love to have you as part of
-            ours! Join our Discords to stay up to date with both projects!
+            Punks Evolved is the "genesis" project to all things 3D in our
+            family of projects - it's the one that started it all and our
+            premium airdrop pass to all things 3D.
           </p>
+          <p>
+            Our first airdropped project was Jack In The Blocks with our next
+            upcoming airdrop being for MetaWares Marketplace, the snapshot of
+            which will be taken 2 weeks after our WL sale
+          </p>
+          <p>
+            Punks Evolved is a 911 supply project so being part of our ecosystem
+            has limited space and entitles you to airdrops and value added
+            incentives for all developments we ever make, as well as royalties
+            to MetaWares Marketplace
+          </p>
+          <p>
+            There are over 115 variations of different rarities spread amongst 9
+            categories of attributes and some truly wild combinations to claim
+            for your own!
+          </p>
+        </div>
 
+        {/* ROADMAP */}
+        <div
+          className={`my-5 roadmap mx-auto d-flex flex-row justify-content-center
+            align-items-center w-100`}>
+          <img
+            className={`text-center w-100 h-100 d-flex d-lg-none`}
+            src={
+              'https://cdn.discordapp.com/attachments/905542266549047336/946346356396675102/Roadmap_squared_optimized_for_mobile.png'
+            }
+            alt='roadmap'
+          />
+          <img
+            className={`text-center w-100 h-100 d-none d-lg-flex`}
+            src={
+              'https://cdn.discordapp.com/attachments/905542266549047336/946346425292316682/Roadmap_Banner_optimized_and_clipped_for_web.png'
+            }
+            alt='roadmap'
+          />
+        </div>
+        {/* FAQ */}
+        <div
+          className={`faq container d-flex flex-column justify-content-center
+            align-itens-center px-3  px-md-5 py-5 text-capitalize`}>
+          <h1 className='text-center my-3'>F.A.Q.</h1>
+          <div className={`d-flex flex-column faq-list mt-5`}>
+            <ul className=''>
+              <li>
+                Who made Punks Evolved?
+                <ul>
+                  <li>
+                    Punks Evolved was crafted by an expert team of 3D Artists
+                    and developers wanting to bring a fresh spin on the
+                    generative NFT landscape. We wanted to maintain the essence
+                    of the 2D and simplistic art styles the crypto space has
+                    grown to love while taking it a step further by creating
+                    generative art in a 3 dimensional format
+                  </li>
+                </ul>
+              </li>
+              <li>
+                How can I purchase a Punk?
+                <ul>
+                  <li>
+                    Connect your wallet to the website and purchase through the
+                    “mint" button
+                  </li>
+                </ul>
+              </li>
+              <li>
+                How much does a punk cost?
+                <ul>
+                  <li>Each punk costs 0.65 SOL to mint</li>
+                </ul>
+              </li>
+              <li>
+                Where can I view my newly minted Punk?
+                <ul>
+                  <li>You can view your punk in your phantom wallet</li>
+                </ul>
+              </li>
+              <li>
+                Is every punk truly unique?
+                <ul>
+                  <li>
+                    Yes! We’ve ensured there will be no duplicate punks, and all
+                    will be 100% unique combinations
+                  </li>
+                </ul>
+              </li>
+              <li>
+                How many attributes are there
+                <ul>
+                  <li>
+                    There are 9 total attributes your punk can take on such as
+                    Background, Head, Mouth, Eyes, Accents, Accesory, Skin,
+                    Gender and Facial hair – all together there are over 115
+                    variations to draw from
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+        {/* Punks Evolved */}
+        <div
+          className={`jitb container-fluid Punks-Evolved-container d-flex flex-column justify-content-center
+            align-items-center px-3 px-md-5 py-5 my-4`}>
+          <div className={`d-flex flex-column  col-md-6 `}>
+            <h1 className={`punk-font mb-5`}>Jack In The Blocks?</h1>
+            <p>
+              Community is everything in NFTs and we’d love to have you as part
+              of ours! Join our Discords to stay up to date with both projects!
+            </p>
+
+            <div
+              className={`d-flex flex-column flex-wrap flex-md-row justify-content-start align-items-center`}>
+              <a
+                className={`jitb-style-btn d-flex flex-row align-items-center btn btn-light text-uppercase my-4 m-2 p-4`}
+                href={'https://jackintheblocks.io/'}>
+                Mint
+              </a>
+              <a
+                className={`jitb-style-btn d-flex flex-row align-items-center btn btn-light text-uppercase my-4 p-4`}
+                href={'http://discord.gg/s99MhhmttM'}>
+                Discord
+              </a>
+              <a
+                className={`jitb-style-btn d-flex flex-row align-items-center btn btn-light text-uppercase my-4 m-2 p-4`}
+                href={'https://twitter.com/JackInTheBlocks'}>
+                Twitter
+              </a>
+            </div>
+          </div>
+        </div>
+        {/* SOCIALS*/}
+        <div
+          className={`container-fluid socials d-flex flex-column justify-content-center
+            align-items-center px-3  px-md-5 py-5 flex-wrap`}>
           <div
-            className={`d-flex flex-column flex-md-row justify-content-start align-items-center`}>
+            className={`d-flex flex-column flex-wrap flex-md-row justify-content-around align-items-center`}>
             <a
-              className={`jitb-style-btn d-flex flex-row align-items-center btn btn-light text-uppercase my-4 m-2 p-4`}
-              href={'https://jackintheblocks.io/'}>
-              Mint
+              className={`jitb-style-btn d-flex flex-row align-items-center btn btn-light text-uppercase my-4 mx-2 p-4`}
+              href={'https://www.magiceden.io/marketplace/punks_evolved'}>
+              Magic Eden
             </a>
             <a
-              className={`jitb-style-btn d-flex flex-row align-items-center btn btn-light text-uppercase my-4 p-4`}
-              href={'http://discord.gg/s99MhhmttM'}>
+              className={`jitb-style-btn d-flex flex-row align-items-center btn btn-light text-uppercase my-4 mx-2 p-4`}
+              href={'https://discord.gg/s99MhhmttM'}>
               Discord
             </a>
             <a
-              className={`jitb-style-btn d-flex flex-row align-items-center btn btn-light text-uppercase my-4 m-2 p-4`}
-              href={'https://twitter.com/JackInTheBlocks'}>
+              className={`jitb-style-btn d-flex flex-row align-items-center btn btn-light text-uppercase my-4 mx-2 p-4`}
+              href={'https://twitter.com/EvolvedPunks'}>
               Twitter
             </a>
           </div>
         </div>
-      </div>
-      {/* SOCIALS*/}
-      <div
-        className={`container-fluid socials d-flex flex-column justify-content-center
-            align-items-center px-3  px-md-5 py-5 flex-wrap`}>
-        <div
-          className={`d-flex flex-column flex-md-row justify-content-around align-items-center`}>
-          <a
-            className={`jitb-style-btn d-flex flex-row align-items-center btn btn-light text-uppercase my-4 mx-2 p-4`}
-            href={'https://www.magiceden.io/marketplace/punks_evolved'}>
-            Magic Eden
-          </a>
-          <a
-            className={`jitb-style-btn d-flex flex-row align-items-center btn btn-light text-uppercase my-4 mx-2 p-4`}
-            href={'https://discord.gg/s99MhhmttM'}>
-            Discord
-          </a>
-          <a
-            className={`jitb-style-btn d-flex flex-row align-items-center btn btn-light text-uppercase my-4 mx-2 p-4`}
-            href={'https://twitter.com/EvolvedPunks'}>
-            Twitter
-          </a>
+        <div className={`d-flex flex-row justify-content-start px-4`}>
+          <p className={`m-0`}>© COPYRIGHT PUNKS EVOLVED 2022</p>
         </div>
       </div>
-      <div className={`d-flex flex-row justify-content-start px-4`}>
-        <p className={`m-0`}>© COPYRIGHT PUNKS EVOLVED 2022</p>
-      </div>
-    </div>
+    </main>
   );
 };
 
